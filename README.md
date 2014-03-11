@@ -1,4 +1,4 @@
-bug_generator
+android bug generator
 =============
 
 generate FC, ANR
