@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:orientation="horizontal"
+	tools:context=".MainActivity"
+	>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_weight="1"
+		android:orientation="vertical">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:orientation="vertical">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="30px" android:gravity="center_horizontal"
+				android:text="trigger force close">
+			</TextView>
+
+			<Button android:id="@+id/button_forceclose"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:text="@string/button_forceclose" android:onClick="forceClose">
+			</Button>
+
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:orientation="vertical">
+
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="30px" android:gravity="center_horizontal"
+				android:text="trigger ANR">
+			</TextView>
+
+			<Button android:id="@+id/button_forceclose"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:text="@string/button_anr" android:onClick="anr">
+			</Button>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:layout_weight="1"
+		>
+        <ScrollView 
+           android:layout_width="fill_parent" 
+           android:layout_height="fill_parent" 
+           android:scrollbars="vertical"
+           android:layout_weight="1"
+           android:background="#AABBCC">
+		    <TextView
+		        android:id="@+id/display_size"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:gravity="center_horizontal"
+			    android:text="touch below button for values">
+		    </TextView>
+        </ScrollView>
+      
+		<Button
+		    android:id="@+id/getDisplaySize"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="2"
+		    android:contentDescription="getting"
+		    android:onClick="getDisplaySize"
+		    android:text="GetScreenSize" >
+
+		</Button>
+
+	</LinearLayout>
+
+</LinearLayout>

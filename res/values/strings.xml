@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WantBug</string>
+    <string name="button_forceclose">ForceClose</string>
+    <string name="button_anr">ANR</string>
+    <string name="menu_settings">Settings</string>
+
+</resources>
