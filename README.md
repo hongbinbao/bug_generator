@@ -1,4 +1,4 @@
 android bug generator
 =============
 
-generate FC, ANR
+apk to generate Anroid FC, ANR
